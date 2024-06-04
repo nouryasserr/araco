@@ -1,0 +1,352 @@
+<style>
+  .footer-container {
+    padding: 50px 60px 100px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .footer-container .footer-section {
+    text-align: right;
+    width: fit-content;
+  }
+  .footer-container .footer-section .section-title {
+    color: #182d44;
+    font-weight: 800;
+    font-size: 18px;
+    border-bottom: 4px solid rgba(63, 81, 181, 0.558);
+    border-radius: 5px;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+  }
+  .footer-container
+    .footer-section
+    .footer-section-content
+    .second-left-section-item {
+    white-space: nowrap;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #0d0d0d;
+    font-weight: 600;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .footer-container
+    .footer-section
+    .footer-section-content
+    .second-left-section-item
+    .icon {
+    color: #223459;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  .footer-container
+    .footer-section
+    .footer-section-content
+    .second-left-section-item:hover {
+    color: #223459;
+  }
+  .footer-container
+    .footer-section
+    .footer-section-content
+    .second-left-section-item:hover
+    .icon {
+    color: #1b2e42;
+  }
+  .whatsapp-button {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1), visibility 0s ease;
+    border: 1px solid #f0f0f0;
+    font-size: 28px;
+    border-radius: 3px;
+  }
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+    border-color: rgba(167, 167, 167, 0.1);
+  }
+  .whatsapp-button a {
+    color: #25d366;
+  }
+  .whatsapp-button.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .footer-scroll-to-top-button {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    background-color: #182d44;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1), visibility 0s ease;
+    border: none;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .footer-scroll-to-top-button:hover {
+    transform: scale(1.1);
+    border-color: rgba(167, 167, 167, 0.1);
+    background-color: #1b2e42;
+  }
+  .footer-scroll-to-top-button i {
+    transition: transform 0.3s ease-in-out;
+  }
+  .footer-scroll-to-top-button:hover i {
+    animation: bounce 0.5s ease-in-out;
+  }
+  .footer-scroll-to-top-button.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100%);
+    }
+  }
+  .bottom-footer {
+    width: 100%;
+    background-color: #1b2e42;
+    padding: 15px 0 10px 0;
+    color: #f2f2f2;
+    position: relative;
+    bottom: 0;
+    z-index: 1000;
+  }
+  .bottom-footer a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  .bottom-footer a:hover {
+    text-decoration: underline;
+  }
+  .list-inline {
+    width: fit-content;
+  }
+  .bottom-footer i {
+    font-size: 18px;
+  }
+  .phone:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  @media (max-width: 780px) {
+    .footer-container {
+      justify-content: right;
+    }
+  }
+</style>
+<script
+  src="https://kit.fontawesome.com/0189ce82a0.js"
+  crossorigin="anonymous"
+></script>
+<div class="footer-container">
+  <div class="footer-section">
+    <div class="section-title">معلومات للتواصل</div>
+    <div class="footer-section-content d-flex flex-column gap-2">
+      <a href="https://maps.google.com/" class="second-left-section-item">
+        <div>
+          <div style="direction: rtl; white-space: wrap">
+            6893 أبو بكر الصديق - حي التعاون - الرياض
+          </div>
+        </div>
+        <i class="fa-solid fa-location-dot icon"></i>
+      </a>
+      <a
+        href="https://maps.app.goo.gl/r4Ldp9gtWEnMeCBw9?g_st=ic"
+        class="second-left-section-item"
+      >
+        <div>
+          <div style="direction: rtl; white-space: wrap">
+            شارع الملك سالمان- الخبر -المنطقه الشرقيه
+          </div>
+        </div>
+        <i class="fa-solid fa-location-dot icon"></i>
+      </a>
+      <a href="tel:00966554556802" class="second-left-section-item">
+        <div>
+          <div>+966 55 455 6802</div>
+        </div>
+        <div><i class="fa-solid fa-phone-flip icon"></i></div>
+      </a>
+      <a href="tel:00966530697678" class="second-left-section-item">
+        <div>
+          <div>+966 53 069 7678</div>
+        </div>
+        <div><i class="fa-solid fa-phone-flip icon"></i></div>
+      </a>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="section-title">روابط مفيدة</div>
+    <div class="footer-section-content d-flex flex-column gap-2">
+      <a href="../index.html" class="second-left-section-item">
+        <div>الصفحة الرئيسية</div>
+        <i class="fas fa-angle-double-left icon"></i>
+      </a>
+      <a href="../news.html" class="second-left-section-item">
+        <div>الاخبار</div>
+        <i class="fas fa-angle-double-left icon"></i>
+      </a>
+      <a href="../contact.html" class="second-left-section-item">
+        <div>تواصل معنا</div>
+        <i class="fas fa-angle-double-left icon"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="section-title">المشاريع الحالية</div>
+    <div class="footer-section-content d-flex flex-column gap-2">
+      <a href="../fakhrya.html" class="second-left-section-item">
+        <div>مجمع الفاخرية</div>
+        <i class="fas fa-angle-double-left icon"></i>
+      </a>
+      <a href="../shrok.html" class="second-left-section-item">
+        <div>مجمع الشروق</div>
+        <i class="fas fa-angle-double-left icon"></i>
+      </a>
+      <a href="../nargs.html" class="second-left-section-item">
+        <div>عوالي النرجس</div>
+        <i class="fas fa-angle-double-left icon"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-section" style="width: 350px">
+    <div class="section-title">عن الرائم</div>
+    <div style="color: #0d0d0d; font-weight: 600">
+      نحرص على اكمال مسيرة العطاء التى بدات منذ ما يقارب العشرين عاما وذلك
+      لاضافة قيمة جديدة للمجتمع وحرصا منا على التوسع فى النشاط العقارى السكنى
+      تماشيا مع رؤية المملكة 2030
+    </div>
+  </div>
+</div>
+<div class="bottom-btn">
+  <button class="whatsapp-button" id="whatsappBtn">
+    <a href="https://wa.me/966554556802"><i class="fab fa-whatsapp"></i></a>
+  </button>
+  <button id="scrollToTopButton" class="footer-scroll-to-top-button">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+</div>
+<div class="bottom-footer">
+  <div class="container-fluid">
+    <div
+      class="d-flex flex-wrap justify-content-around gap-2 align-items-center"
+    >
+      <div class="d-flex gap-4">
+        <a href="https://spaceoutagency.com/"
+          >&copy; 2024 Spaceout. All rights reserved</a
+        >
+      </div>
+      <div>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a
+              href="https://www.tiktok.com/@al_raem1?lang=en"
+              onmouseover="this.style.color='#010101'"
+              onmouseout="this.style.color='#f2f2f2'"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.snapchat.com/add/araco.develop?share_id=yOTsCJtCTZ69_QqPAwMSXA&locale=en_SA@calendar=gregorian"
+              onmouseover="this.style.color='#fffc00'"
+              onmouseout="this.style.color='#f2f2f2'"
+              ><i class="fa-brands fa-snapchat"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.facebook.com/profile.php?id=61559480529559"
+              onmouseover="this.style.color='#1877f2'"
+              onmouseout="this.style.color='#f2f2f2'"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.instagram.com/alraem1/"
+              onmouseover="this.style.color='#c32aa3'"
+              onmouseout="this.style.color='#f2f2f2'"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://twitter.com/alraem10"
+              onmouseover="this.style.color='#000000'"
+              onmouseout="this.style.color='#f2f2f2'"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.youtube.com/channel/UCSDOrfFO3IsgSvewlmq2Dng"
+              onmouseover="this.style.color='#ff0000'"
+              onmouseout="this.style.color='#f2f2f2'"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    var scrollToTopButton = $("#scrollToTopButton");
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > $(window).height() / 4) {
+        scrollToTopButton.addClass("visible");
+      } else {
+        scrollToTopButton.removeClass("visible");
+      }
+    });
+
+    scrollToTopButton.click(function () {
+      $("html, body").animate(
+        { scrollTop: 0 },
+        { duration: 0, easing: "swing", behavior: "smooth" }
+      );
+    });
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    var whatsappBtn = $("#whatsappBtn");
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > $(window).height() / 4) {
+        whatsappBtn.addClass("visible");
+      } else {
+        whatsappBtn.removeClass("visible");
+      }
+    });
+  });
+</script>
